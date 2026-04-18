@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <PackageId>TorchSharp.OnnxExporter</PackageId>
+    <Version>1.0.0</Version>
+    <Authors>luoka</Authors>
+    <Description>A pure C# library to export TorchSharp neural network models to ONNX format with symbolic tracing engine. 支持将 TorchSharp 模型导出为 ONNX 格式的纯 C# 库。</Description>
+    <RepositoryUrl>https://github.com/RC16348/TorchSharp.OnnxExporter</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/RC16348/TorchSharp.OnnxExporter</PackageProjectUrl>
+    <PackageTags>torchsharp;onnx;machine-learning;export;neural-network;deep-learning;symbolic-tracing</PackageTags>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageReleaseNotes>Initial release: Support for 100+ neural network layers including Conv, Linear, Pooling, Activation, Normalization, RNN/LSTM/GRU, Attention, and stateful operators.</PackageReleaseNotes>
+    <Copyright>Copyright (c) 2026 TorchSharp.OnnxExporter Contributors</Copyright>
+    <RequireLicenseAcceptance>false</RequireLicenseAcceptance>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="OnnxSharp" Version="0.3.2" />
+    <PackageReference Include="TorchSharp-cpu" Version="0.106.0" />
+    <PackageReference Include="Microsoft.ML.OnnxRuntime" Version="1.17.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="README.md" Pack="true" PackagePath="\" />
+  </ItemGroup>
+
+</Project>
